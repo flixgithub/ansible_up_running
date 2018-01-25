@@ -111,6 +111,9 @@
     - name: run nginx
       docker:
         image: bryan/nginx-mezzanine:latest
+        expose: 
+          - 8081
+          - 443
         ports:
           - 8081:8081
           - 443:443
